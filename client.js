@@ -59,9 +59,14 @@ console.log('sumTiles returns:', sumTiles(myScrabbleTiles));
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the 
 // value to a variable called "myScore".
 
+let myScore = sumTiles(myScrabbleTiles);
 
 // 8. Check whether or not your score is higher than the highScore.
 // 8-1 If your score is higher, change highScore to the new high score.
 
+if ( myScore>highScore ){
+  highScore = myScore
+}
+console.log('highScore is now:', highScore);
 
 // DONE!
